@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ing. Civil Informática & Telecomunicaciones · UDP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Orbitron (gamer/display) + Share Tech Mono (código retro) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CURSOR PERSONALIZADO
+  ════════════════════════════════════════════ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="glitch-text" data-text="&lt;DEV/&gt;">&lt;DEV/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">inicio</a></li>
+      <li><a href="#sobre-mi">sobre_mí</a></li>
+      <li><a href="#habilidades">skills</a></li>
+      <li><a href="#proyectos">proyectos</a></li>
+      <li><a href="#formacion">formación</a></li>
+      <li><a href="#contacto">contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 1 — HERO
+  ════════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+
+    <!-- Fondo con cuadrícula pixelada animada -->
+    <div class="hero-grid"></div>
+    <!-- Partículas flotantes -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <!-- Avatar pixel-art generado en CSS -->
+      <div class="pixel-avatar">
+        <div class="avatar-glow"></div>
+        <div class="avatar-body">
+          <!-- Pixel art simplificado en CSS usando box-shadow grid -->
+          <div class="pixel-head"></div>
+          <div class="pixel-torso"></div>
+          <div class="pixel-badge">UDP</div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <!-- Texto con efecto de escritura tipo terminal -->
+        <p class="terminal-prefix">
+          <span class="prompt">~/portfolio $</span>
+          <span class="typed-cmd" id="typedCmd"></span>
+          <span class="cursor-blink">▊</span>
+        </p>
+
+        <h1 class="hero-name glitch-text" data-text="Tu Nombre">Tu&nbsp;Nombre</h1>
+
+        <div class="hero-role">
+          <span class="role-tag">&lt;</span>
+          <span class="role-text">Ing. Civil Informática &amp; Telecomunicaciones</span>
+          <span class="role-tag">/&gt;</span>
+        </div>
+
+        <p class="hero-udp">
+          <span class="udp-dot">◈</span> Universidad Diego Portales · 5° Semestre
+        </p>
+
+        <p class="hero-tagline">
+          Construyendo el futuro,<br />
+          <strong class="neon-green">un commit a la vez.</strong>
+        </p>
+
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn-primary">
+            <span class="btn-icon">▶</span> Ver Proyectos
+          </a>
+          <a href="#contacto" class="btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator">
+      <span class="scroll-label">scroll</span>
+      <div class="scroll-arrow">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 2 — SOBRE MÍ
+  ════════════════════════════════════════════ -->
+  <section id="sobre-mi" class="sobre-mi reveal">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">sobre_mí<span class="neon-cursor">_</span></h2>
+    </div>
+
+    <div class="sobre-grid">
+      <!-- Tarjeta principal -->
+      <div class="card about-card">
+        <div class="card-scanline"></div>
+        <p class="about-text">
+          Soy estudiante de <strong>Ingeniería Civil en Informática y Telecomunicaciones</strong> 
+          en la UDP, actualmente en mi <strong class="neon-blue">5° semestre</strong>. 
+          Me apasiona transformar ideas complejas en soluciones tecnológicas elegantes, 
+          combinando fundamentos sólidos de ciencias exactas con habilidades de desarrollo práctico.
+        </p>
+        <p class="about-text">
+          Mi enfoque está en el <strong class="neon-purple">desarrollo de software</strong>, 
+          la <strong class="neon-green">gestión de datos</strong> y las 
+          <strong class="neon-blue">telecomunicaciones</strong>, áreas que convergen 
+          en la creación de sistemas robustos y escalables.
+        </p>
+      </div>
+
+      <!-- Tags de intereses -->
+      <div class="interests-panel">
+        <h3 class="panel-title">// intereses</h3>
+        <div class="interest-tags">
+          <span class="tag tag-green">Inteligencia Artificial</span>
+          <span class="tag tag-blue">Redes y Telecomunicaciones</span>
+          <span class="tag tag-purple">Ingeniería de Software</span>
+          <span class="tag tag-green">Bases de Datos</span>
+          <span class="tag tag-blue">Cloud Computing</span>
+          <span class="tag tag-purple">Ciberseguridad</span>
+          <span class="tag tag-green">Algoritmos</span>
+          <span class="tag tag-blue">Data Analytics</span>
+        </div>
+
+        <!-- Mini stats -->
+        <div class="mini-stats">
+          <div class="stat-item">
+            <span class="stat-value neon-green">4</span>
+            <span class="stat-label">semestres aprobados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value neon-blue">5+</span>
+            <span class="stat-label">tecnologías dominadas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value neon-purple">∞</span>
+            <span class="stat-label">ganas de aprender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 3 — HABILIDADES
+  ════════════════════════════════════════════ -->
+  <section id="habilidades" class="habilidades reveal">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">skills<span class="neon-cursor">_</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Lenguajes de Programación -->
+      <div class="card skills-card">
+        <h3 class="skills-cat">
+          <span class="cat-icon">⟨/⟩</span> Lenguajes
+        </h3>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">C++</span>
+              <span class="skill-pct neon-green">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="80" style="--clr: var(--green)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL</span>
+              <span class="skill-pct neon-blue">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="75" style="--clr: var(--blue)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct neon-purple">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="70" style="--clr: var(--purple)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">CSS</span>
+              <span class="skill-pct neon-green">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="65" style="--clr: var(--green)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct neon-blue">50%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="50" style="--clr: var(--blue)"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Herramientas -->
+      <div class="card skills-card">
+        <h3 class="skills-cat">
+          <span class="cat-icon">⚙</span> Herramientas
+        </h3>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">IntelliJ IDEA</span>
+              <span class="skill-pct neon-purple">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="85" style="--clr: var(--purple)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Power BI</span>
+              <span class="skill-pct neon-green">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="70" style="--clr: var(--green)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Git / GitHub</span>
+              <span class="skill-pct neon-blue">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="65" style="--clr: var(--blue)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Linux / CLI</span>
+              <span class="skill-pct neon-purple">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="60" style="--clr: var(--purple)"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">MySQL Workbench</span>
+              <span class="skill-pct neon-green">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-w="65" style="--clr: var(--green)"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Áreas de conocimiento -->
+      <div class="card skills-card skills-card--wide">
+        <h3 class="skills-cat">
+          <span class="cat-icon">◈</span> Áreas Académicas
+        </h3>
+        <div class="knowledge-hexgrid">
+          <div class="hex-item"><span class="hex-label">Álgebra &amp; Cálculo</span></div>
+          <div class="hex-item"><span class="hex-label">Estructuras de Datos</span></div>
+          <div class="hex-item"><span class="hex-label">Bases de Datos</span></div>
+          <div class="hex-item"><span class="hex-label">Sistemas Operativos</span></div>
+          <div class="hex-item"><span class="hex-label">Redes TCP/IP</span></div>
+          <div class="hex-item"><span class="hex-label">Prob. &amp; Estadística</span></div>
+          <div class="hex-item"><span class="hex-label">Ing. de Software</span></div>
+          <div class="hex-item"><span class="hex-label">Proyectos TIC</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 4 — PROYECTOS
+  ════════════════════════════════════════════ -->
+  <section id="proyectos" class="proyectos reveal">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">proyectos<span class="neon-cursor">_</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Proyecto 1 -->
+      <div class="project-card card" data-index="01">
+        <div class="project-header">
+          <span class="project-num">01</span>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub">
+              <!-- SVG GitHub icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+            <a href="#" class="proj-link" title="Demo">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Simulador de Estructuras de Datos</h3>
+        <p class="project-desc">
+          Implementación en C++ de las principales estructuras de datos 
+          (listas enlazadas, árboles AVL, grafos, colas de prioridad) 
+          con visualización de operaciones y análisis de complejidad algorítmica.
+        </p>
+        <div class="project-tech">
+          <span class="tech-pill">C++</span>
+          <span class="tech-pill">Algoritmos</span>
+          <span class="tech-pill">IntelliJ</span>
+        </div>
+        <div class="project-future">
+          <span class="future-label">→ mejoras futuras:</span>
+          Interfaz web, visualización gráfica con canvas
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="project-card card" data-index="02">
+        <div class="project-header">
+          <span class="project-num">02</span>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+            <a href="#" class="proj-link" title="Demo">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Sistema de Gestión BD Universitaria</h3>
+        <p class="project-desc">
+          Diseño e implementación de una base de datos relacional completa para 
+          gestión académica universitaria. Incluye modelo ER, normalización hasta 3FN, 
+          procedimientos almacenados y consultas optimizadas.
+        </p>
+        <div class="project-tech">
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Modelado ER</span>
+        </div>
+        <div class="project-future">
+          <span class="future-label">→ mejoras futuras:</span>
+          API REST, autenticación JWT, panel de administración
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="project-card card" data-index="03">
+        <div class="project-header">
+          <span class="project-num">03</span>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+            <a href="#" class="proj-link" title="Demo">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Dashboard TI — Análisis de Redes</h3>
+        <p class="project-desc">
+          Dashboard interactivo en Power BI para monitoreo y análisis de 
+          métricas de red empresarial. Visualización de latencia, 
+          ancho de banda, tráfico por protocolo y alertas de rendimiento.
+        </p>
+        <div class="project-tech">
+          <span class="tech-pill">Power BI</span>
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">Redes TCP/IP</span>
+        </div>
+        <div class="project-future">
+          <span class="future-label">→ mejoras futuras:</span>
+          Datos en tiempo real con API, alertas automatizadas
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="project-card card" data-index="04">
+        <div class="project-header">
+          <span class="project-num">04</span>
+          <div class="project-links">
+            <a href="#" class="proj-link" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+            <a href="#" class="proj-link" title="Demo">↗</a>
+          </div>
+        </div>
+        <h3 class="project-title">Portfolio Personal Web</h3>
+        <p class="project-desc">
+          Este mismo sitio web. Diseñado desde cero con HTML5, CSS3 y 
+          JavaScript vanilla. Implementación de animaciones, cursor personalizado, 
+          efectos glitch y diseño completamente responsive.
+        </p>
+        <div class="project-tech">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">JavaScript</span>
+        </div>
+        <div class="project-future">
+          <span class="future-label">→ mejoras futuras:</span>
+          Migrar a React + Three.js, CMS headless
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 5 — FORMACIÓN / TIMELINE
+  ════════════════════════════════════════════ -->
+  <section id="formacion" class="formacion reveal">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">formación<span class="neon-cursor">_</span></h2>
+    </div>
+
+    <div class="timeline-container">
+
+      <!-- Universidad encabezado -->
+      <div class="uni-badge">
+        <div class="uni-logo">UDP</div>
+        <div class="uni-info">
+          <strong>Universidad Diego Portales</strong>
+          <span>Ing. Civil Informática &amp; Telecomunicaciones · 2022 → presente</span>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item completed">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-meta">
+              <span class="tl-sem">1° Semestre</span>
+              <span class="tl-badge completed-badge">✓ Aprobado</span>
+            </div>
+            <h4>Fundamentos Matemáticos</h4>
+            <div class="tl-courses">
+              <span>Álgebra Lineal</span>
+              <span>Cálculo I</span>
+              <span>Introducción a la Programación (C++)</span>
+              <span>Fundamentos de Ingeniería</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-meta">
+              <span class="tl-sem">2° Semestre</span>
+              <span class="tl-badge completed-badge">✓ Aprobado</span>
+            </div>
+            <h4>Programación y Análisis</h4>
+            <div class="tl-courses">
+              <span>Cálculo II</span>
+              <span>Estructuras de Datos</span>
+              <span>Bases de Datos I</span>
+              <span>Introducción a Telecomunicaciones</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-meta">
+              <span class="tl-sem">3° Semestre</span>
+              <span class="tl-badge completed-badge">✓ Aprobado</span>
+            </div>
+            <h4>Sistemas y Redes</h4>
+            <div class="tl-courses">
+              <span>Sistemas Operativos</span>
+              <span>Redes de Computadores</span>
+              <span>Bases de Datos II</span>
+              <span>Probabilidad y Estadística</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed">
+          <div class="tl-dot"></div>
+          <div class="tl-content card">
+            <div class="tl-meta">
+              <span class="tl-sem">4° Semestre</span>
+              <span class="tl-badge completed-badge">✓ Aprobado</span>
+            </div>
+            <h4>Ingeniería Aplicada</h4>
+            <div class="tl-courses">
+              <span>Ingeniería de Software</span>
+              <span>Protocolos de Telecomunicaciones</span>
+              <span>Algoritmos Avanzados</span>
+              <span>Proyectos TIC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item current">
+          <div class="tl-dot tl-dot--pulse"></div>
+          <div class="tl-content card">
+            <div class="tl-meta">
+              <span class="tl-sem">5° Semestre</span>
+              <span class="tl-badge current-badge">⚡ En Curso</span>
+            </div>
+            <h4>Especialización Avanzada</h4>
+            <div class="tl-courses">
+              <span>Arquitectura de Software</span>
+              <span>Redes Avanzadas</span>
+              <span>Inteligencia Artificial</span>
+              <span>Seguridad Informática</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECCIÓN 6 — CONTACTO
+  ════════════════════════════════════════════ -->
+  <section id="contacto" class="contacto reveal">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">contacto<span class="neon-cursor">_</span></h2>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-text">
+        <p>¿Tienes un proyecto, propuesta o simplemente quieres hablar de tecnología?</p>
+        <p class="contact-invite"><strong class="neon-green">Estoy disponible</strong> para colaboraciones académicas, prácticas y proyectos freelance.</p>
+      </div>
+
+      <div class="contact-links">
+        <!-- Email -->
+        <a href="mailto:tu.email@mail.udp.cl" class="contact-card card">
+          <div class="contact-icon">✉</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-val">tu.email@mail.udp.cl</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="contact-card card">
+          <div class="contact-icon">in</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">linkedin.com/in/tu-usuario</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/tu-usuario" target="_blank" class="contact-card card">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-val">github.com/tu-usuario</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">
+        &lt;crafted with <span class="neon-green">❤</span> &amp; C++ mentality /&gt;
+      </span>
+      <span class="footer-udp">UDP · Ing. Civil Informática © 2025</span>
+    </div>
+    <!-- Barra de progreso decorativa -->
+    <div class="footer-bar">
+      <div class="footer-progress"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
